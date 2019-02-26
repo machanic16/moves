@@ -1,9 +1,13 @@
 body {
     background: rgb(230,230,230);
 }
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+}
 .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 430px);
     grid-template-rows: 80px;
     grid-gap: 20px;
     border-bottom: 2px solid gray;
@@ -64,18 +68,28 @@ input {
     width: 100px;
 }
 .barra-info h1,
-.barra-info span {
+.home,
+.trending,
+.likes,
+.settings {
     font-size: 25px;
-    display: block;
+    display: flex;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+    justify-content: space-around;
+
 }
 .homeIcon,
 .trendingIcon,
 .likesIcon,
 .settingsIcon {
-    /* border: 1px solid red; */
-    display: block;
     background: orangered;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
 }
 /* .homeIcon span,
 .trendingIcon span,
@@ -106,4 +120,10 @@ input {
 .likes,
 .settings {
     font-family: firstTime;
+}
+.move {
+    position: relative;
+}
+.moveDescription {
+    
 }
