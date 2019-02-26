@@ -1,0 +1,109 @@
+body {
+    background: rgb(230,230,230);
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px;
+    grid-gap: 20px;
+    border-bottom: 2px solid gray;
+    background: white;
+}
+.badge {
+    display: flex;
+    align-items: center;
+}
+.badge h1{
+    font-family: Great Vibes;
+    margin: 0;
+}
+.badge img {
+    width:80px;
+    height:80px;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+input {
+    height: 27px;
+    width:  100%;
+    border-radius: 5px;
+    margin: auto;
+}
+.user-settings{
+    display: flex;
+    align-items: center;
+}
+.user-settings h1 {
+    font-family: Anton;
+    margin: 0;
+}
+.user-settings img {
+    border-radius: 40px;
+    margin: 0;
+    width:80px;
+    height:80px;
+}
+
+.user-settings button {
+    margin: 0;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.user-settings button:hover {
+    background: gray;
+    width: 
+}
+.barra-info {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px 100px 100px 300px;
+    width: 100px;
+}
+.barra-info h1,
+.barra-info span {
+    font-size: 25px;
+    display: block;
+}
+.homeIcon,
+.trendingIcon,
+.likesIcon,
+.settingsIcon {
+    /* border: 1px solid red; */
+    display: block;
+    background: orangered;
+    color: white;
+}
+/* .homeIcon span,
+.trendingIcon span,
+.likesIcon span,
+.settingsIcon span,
+.homeIcon h1,
+.trendingIcon h1,
+.likesIcon h1,
+.settingsIcon h1 {
+ margin: auto;
+} */
+.homeIcon {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.settingsIcon{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+/* .settingsIcon {
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+} */
+.home,
+.trending,
+.likes,
+.settings {
+    font-family: firstTime;
+}
