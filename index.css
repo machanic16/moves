@@ -5,6 +5,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.move-list-container {
+    width: 1200px;
+}
 .header {
     display: grid;
     grid-template-columns: repeat(3, 430px);
@@ -78,7 +81,7 @@ input {
     height: 30px;
     width: 100px;
     justify-content: space-around;
-
+    font-family: PT Sans Narrow;
 }
 .homeIcon,
 .trendingIcon,
@@ -99,7 +102,7 @@ input {
 .trendingIcon h1,
 .likesIcon h1,
 .settingsIcon h1 {
- margin: auto;
+    margin: auto;
 } */
 .homeIcon {
     border-top-left-radius: 15px;
@@ -108,7 +111,7 @@ input {
 .settingsIcon{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-
+    
 }
 /* .settingsIcon {
     display: flex;
@@ -121,9 +124,47 @@ input {
 .settings {
     font-family: firstTime;
 }
+.moves-list {
+    display: grid;
+    grid-template-columns: repeat(3 , 350px);
+    grid-template-rows: 350px;
+    grid-gap: 15px;
+    width: 1200px;
+    justify-content: space-evenly;
+}
 .move {
     position: relative;
+    border-radius: 10px;
+}
+.moveIcon {
+    position: relative;
+    margin: 0%;
+}
+.move img {
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
 }
 .moveDescription {
-    
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(10,10,10,.8);
+    color: white;
+    height: 110px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.moveDescription h1 {
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: PT Sans Narrow;
+}
+
+.moveDescription p {
+    margin: 0%;
+    text-align: center;
+    font-family: PT Sans Narrow;
 }
